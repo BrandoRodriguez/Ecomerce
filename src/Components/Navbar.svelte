@@ -2,8 +2,6 @@
   import { cart } from "../stores/stores.js";
   import { createEventDispatcher } from "svelte";
 
-
-
   const dispatch = createEventDispatcher();
 
   let cart_sum = 0;
@@ -89,7 +87,6 @@
   ::after {
     box-sizing: inherit;
   }
-  
 
   .iZKyqx {
     width: auto;
@@ -153,13 +150,13 @@
       <span style="vertical-align: inherit;">{articulo}</span>
     </span>
     <span class="CartPopupstyle__PriceBoxAlt-sc-67tc19-6 iZKyqx">
-      
+
       <!-- -->
       <span style="vertical-align: inherit;">
         <span style="vertical-align: inherit;">
-        {#if cart_sum > 0}
-          <div class="circle">{cart_sum}</div>
-        {/if}
+          {#if cart_sum > 0}
+            <div class="circle">{cart_sum}</div>
+          {/if}
         </span>
       </span>
     </span>

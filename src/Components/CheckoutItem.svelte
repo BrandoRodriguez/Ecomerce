@@ -3,9 +3,7 @@
   export let item;
   let { name, price, img, count } = item;
 
-
   $: doubled = count * price;
-   
 
   const countButtonHandler = e => {
     if (e.target.classList.contains("add")) {
@@ -22,7 +20,6 @@
       return n;
     });
   };
-
 </script>
 
 <style>
@@ -32,7 +29,7 @@
     margin: 10px;
     padding: 20px;
     border-radius: 7px;
-      }
+  }
 
   img {
     object-fit: cover;
@@ -67,7 +64,6 @@
   }
 
   .count button.add {
-
     border-radius: 5px 0 0 5px;
     margin-right: 0;
     border: 0.5px solid #7d7d7d;
@@ -76,7 +72,7 @@
   .count p {
     border: 0.5px solid #7d7d7d;
     margin: 0;
-  
+
     background: #fefefe;
     border-left: none;
     border-right: none;
@@ -123,8 +119,6 @@
       width: 100%;
     }
   }
-
-
 
   /* {{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}} */
 
@@ -386,64 +380,64 @@
     <h3 class="title">{name}</h3>
     <p class="price">Price: {price}</p>
     <p class="price">Suma: {doubled}</p>
-    
+
     <div class="count">
-            <div class="Counterstyle__CounterBox-sc-14ahato-0 fmEddu">
+      <div class="Counterstyle__CounterBox-sc-14ahato-0 fmEddu">
 
-                <!-- <input type="checkbox" bind:checked={visible}> -->
+        <!-- <input type="checkbox" bind:checked={visible}> -->
 
-                <button
-                  class=" add  Counterstyle__CounterButton-sc-14ahato-1 bPmfin"
-                  on:click={countButtonHandler}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12px"
-                    height="2px"
-                    viewBox="0 0 12 2">
-                    <rect
-                      data-name="Rectangle 522"
-                      width="12"
-                      height="2"
-                      rx="1"
-                      fill="currentColor" />
-                  </svg>
-                </button>
-                <span class="Counterstyle__CounterValue-sc-14ahato-2 dMHyRK">
-                  {count}
-                </span>
-                <button
-                  class="Counterstyle__CounterButton-sc-14ahato-1 bPmfin"
-                  on:click={countButtonHandler}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12px"
-                    height="12px"
-                    viewBox="0 0 12 12">
-                    <g
-                      id="Group_3351"
-                      data-name="Group 3351"
-                      transform="translate(-1367 -190)">
-                      <rect
-                        data-name="Rectangle 520"
-                        width="12"
-                        height="2"
-                        rx="1"
-                        transform="translate(1367 195)"
-                        fill="currentColor" />
-                      <rect
-                        data-name="Rectangle 521"
-                        width="12"
-                        height="2"
-                        rx="1"
-                        transform="translate(1374 190) rotate(90)"
-                        fill="currentColor" />
-                    </g>
-                  </svg>
+        <button
+          class=" add Counterstyle__CounterButton-sc-14ahato-1 bPmfin"
+          on:click={countButtonHandler}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            height="2px"
+            viewBox="0 0 12 2">
+            <rect
+              data-name="Rectangle 522"
+              width="12"
+              height="2"
+              rx="1"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <span class="Counterstyle__CounterValue-sc-14ahato-2 dMHyRK">
+          {count}
+        </span>
+        <button
+          class="Counterstyle__CounterButton-sc-14ahato-1 bPmfin"
+          on:click={countButtonHandler}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            height="12px"
+            viewBox="0 0 12 12">
+            <g
+              id="Group_3351"
+              data-name="Group 3351"
+              transform="translate(-1367 -190)">
+              <rect
+                data-name="Rectangle 520"
+                width="12"
+                height="2"
+                rx="1"
+                transform="translate(1367 195)"
+                fill="currentColor" />
+              <rect
+                data-name="Rectangle 521"
+                width="12"
+                height="2"
+                rx="1"
+                transform="translate(1374 190) rotate(90)"
+                fill="currentColor" />
+            </g>
+          </svg>
 
-                </button>
-              </div>
+        </button>
+      </div>
       <button class="remove" on:click={removeItem}>
-      <object
+        <object
           aria-label="remove"
           type="image/svg+xml"
           data="img/svg/cancel.svg" />
@@ -452,5 +446,3 @@
     </div>
   </div>
 </div>
-
-
