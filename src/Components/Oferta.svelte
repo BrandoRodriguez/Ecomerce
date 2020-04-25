@@ -1,8 +1,9 @@
 <script>
-export let o;
+  export let o;
 </script>
+
 <style>
-.gBbfsg {
+  .gBbfsg {
     font-family: Lato, sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -16,7 +17,7 @@ export let o;
     top: 15px;
     right: 15px;
     border-radius: 12px;
-}
+  }
 </style>
 
 <span class="ProductCardstyle__DiscountPercent-sc-14yo7ej-3 gBbfsg">{o}</span>

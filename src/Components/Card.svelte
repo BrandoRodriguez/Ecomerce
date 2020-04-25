@@ -4,8 +4,6 @@
   import { fly } from "svelte/transition";
   import Oferta from "./Oferta.svelte";
 
-
-
   let visible = true;
 
   let svg =
@@ -399,5 +397,3 @@
     </div>
   </div>
 </div>
-
-

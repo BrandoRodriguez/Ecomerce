@@ -28,11 +28,7 @@
       option: "checkout"
     });
   }
-  function goToModa() {
-    dispatch("nav", {
-      option: "moda"
-    });
-  }
+
 </script>
 
 <style>

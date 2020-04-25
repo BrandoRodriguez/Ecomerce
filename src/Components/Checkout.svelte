@@ -72,4 +72,3 @@
     <button class="checkout" on:click={checkout}>Checkout</button>
   {/if}
 </div>
-
